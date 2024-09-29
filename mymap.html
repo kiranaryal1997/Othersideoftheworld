@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6709edd45beeec3634fb0ba77ea677c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c6709edd45beeec3634fb0ba77ea677c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c6709edd45beeec3634fb0ba77ea677c = L.map(
+                "map_c6709edd45beeec3634fb0ba77ea677c",
+                {
+                    center: [40.0, 2.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c5e363bbb54b8df83b5a8e77e3d74da9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c5e363bbb54b8df83b5a8e77e3d74da9.addTo(map_c6709edd45beeec3634fb0ba77ea677c);
+        
+    
+            var marker_fdb6917f02965058d90c35689713c765 = L.marker(
+                [27.71, 85.32],
+                {}
+            ).addTo(map_c6709edd45beeec3634fb0ba77ea677c);
+        
+    
+        var popup_55101cff71895543a4b32a46820cbb39 = L.popup({"maxWidth": 100});
+
+        
+            
+                var html_7e5a14e25e884750787f7630a66bb04b = $(`<div id="html_7e5a14e25e884750787f7630a66bb04b" style="width: 100.0%; height: 100.0%;">15h 74°F <img src="https://openweathermap.org/img/wn/10n@2x.png" width=50>     <hr>     18h 71°F <img src="https://openweathermap.org/img/wn/04n@2x.png" width=50>     <hr>     21h 68°F <img src="https://openweathermap.org/img/wn/04n@2x.png" width=50>     <hr>     00h 65°F <img src="https://openweathermap.org/img/wn/04n@2x.png" width=50>     <hr></div>`)[0];
+                popup_55101cff71895543a4b32a46820cbb39.setContent(html_7e5a14e25e884750787f7630a66bb04b);
+            
+        
+
+        marker_fdb6917f02965058d90c35689713c765.bindPopup(popup_55101cff71895543a4b32a46820cbb39)
+        ;
+
+        
+    
+    
+            var marker_a99cdabd1240e32541418564a71bcf96 = L.marker(
+                [-33.9, 151.1],
+                {}
+            ).addTo(map_c6709edd45beeec3634fb0ba77ea677c);
+        
+    
+        var popup_77c389f077164de361f8300a3084cdcf = L.popup({"maxWidth": 100});
+
+        
+            
+                var html_8804301605648416eee0e15c6680be3a = $(`<div id="html_8804301605648416eee0e15c6680be3a" style="width: 100.0%; height: 100.0%;">15h 53°F <img src="https://openweathermap.org/img/wn/04n@2x.png" width=50>     <hr>     18h 52°F <img src="https://openweathermap.org/img/wn/04n@2x.png" width=50>     <hr>     21h 51°F <img src="https://openweathermap.org/img/wn/03d@2x.png" width=50>     <hr>     00h 62°F <img src="https://openweathermap.org/img/wn/01d@2x.png" width=50>     <hr></div>`)[0];
+                popup_77c389f077164de361f8300a3084cdcf.setContent(html_8804301605648416eee0e15c6680be3a);
+            
+        
+
+        marker_a99cdabd1240e32541418564a71bcf96.bindPopup(popup_77c389f077164de361f8300a3084cdcf)
+        ;
+
+        
+    
+    
+            var marker_6e0f22a76a5b1a48a3cc775a1997812d = L.marker(
+                [32.25, -110.98],
+                {}
+            ).addTo(map_c6709edd45beeec3634fb0ba77ea677c);
+        
+    
+        var popup_a2e72bc059d9d535aded2d0a4c4e1c56 = L.popup({"maxWidth": 100});
+
+        
+            
+                var html_5345e8db16281531e855b7341471fd06 = $(`<div id="html_5345e8db16281531e855b7341471fd06" style="width: 100.0%; height: 100.0%;">15h 77°F <img src="https://openweathermap.org/img/wn/10d@2x.png" width=50>     <hr>     18h 79°F <img src="https://openweathermap.org/img/wn/10d@2x.png" width=50>     <hr>     21h 85°F <img src="https://openweathermap.org/img/wn/10d@2x.png" width=50>     <hr>     00h 89°F <img src="https://openweathermap.org/img/wn/04d@2x.png" width=50>     <hr></div>`)[0];
+                popup_a2e72bc059d9d535aded2d0a4c4e1c56.setContent(html_5345e8db16281531e855b7341471fd06);
+            
+        
+
+        marker_6e0f22a76a5b1a48a3cc775a1997812d.bindPopup(popup_a2e72bc059d9d535aded2d0a4c4e1c56)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,4 @@
+folium~=0.17.0
+pytz~=2024.1
+timezonefinder~=6.5.2
+sunnyday~=2.0.0
